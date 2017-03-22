@@ -10,3 +10,5 @@ entry: This is the entry point for your application.
 loaders (module.rules): This section specifies how each file should be processed before it is combined into your bundle. We only have one loader: Babel. This converts your ES6 + JSX JavaScript into ES5 before merging it into your bundle.
 
 resolve: Where Webpack should look for files referenced by an import or require() statement. This makes it so that you can import npm packages in your code.
+
+npm start - arranca la app
