@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JBayona/ThinkingInReact.git"
+    "url": "rgit+https://github.com/JBayona/ThinkingInReact.git"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +19,9 @@
   "homepage": "https://github.com/JBayona/ThinkingInReact#readme",
   "dependencies": {
     "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
     "babel-preset-latest": "^6.24.0",
-    "babel-preset-react": "^6.23.0"
+    "babel-preset-react": "^6.23.0",
+    "webpack": "^2.3.0"
   }
 }
