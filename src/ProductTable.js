@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductCategoryRow from './ProductCategoryRow';
+import ProductRow from './ProductRow';
 
 class ProductTable extends React.Component{
 	render(){
@@ -9,10 +10,21 @@ class ProductTable extends React.Component{
 		this.props.products.forEach(product => {
 			if(product.category != lastCategory){
 				rows.push(<ProductCategoryRow product = {product} key = {product.category}/>);
+				rows.push(<ProductRow product = {product} key = {product.name}/>);
 				lastCategory = product.category;
 			}
 		});
-		return (<h1>Hi</h1>);
+		return (
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody>{rows}</tbody>
+			</table>
+		);
 	}
 }
 
