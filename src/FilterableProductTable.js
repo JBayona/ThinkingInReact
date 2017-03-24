@@ -1,9 +1,16 @@
 import React from 'react';
+import SearchBar from './SearchBar';
 
 class FilterableProductTable extends React.Component{
+	constructor(){
+		super();
+		this.state = {
+			products : PRODUCTS
+		};
+	}
 	render(){
 		return(<div>
-			Testing
+			<SearchBar/>
 		</div>);
 	}
 }
